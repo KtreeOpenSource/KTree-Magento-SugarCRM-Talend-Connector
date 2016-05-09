@@ -9,6 +9,10 @@ Tested Environment:
 
 Magento Plugin : Magento 1
 
+     Talend ESB v6.1.0
+     Magento version : v1 , SOAP API version : v1 
+     SugarCRM Version : 7.6.1.0 , SOAP API version : v2. 
+
 Prerequisites:
 --------------
 
@@ -104,8 +108,17 @@ Installing magento-plugin before running Talend Job:
   ----------------------
   
   $allCustomers = $soap->call($sessionID,"advanceapi_customer.itemslist",array($allCustomerIds)); 
+  
+Features: 
 
-installing and Running Job:
+  	$allCustomerIds = $soap->call($sessionID,"advanceapi_customer.getAllIds");  
+  	
+ Our Customized  API will give us All CustomerIds list only , Where as basic magento API which will fetch customer details with basic information along with Customer Information (like customerid,  name,email etc...) 
+ 	
+  	$allCustomers 	= 	$soap->call($sessionID,"advanceapi_customer.itemslist",array($allCustomerIds)); 		  
+ This Customized Api will give us Complete information about the customer ids we are passing to this method which includes customer information and customer Addresses.Where as in basic Magento needs to send request every time to get custome information and one more request for customer Address. 
+
+ installing and Running Job:
 -----------------------------
   
   1. First Extract the given bundle to any of your system directory windows/Linux you can find a folder called "Magento2SugarCRM"
@@ -140,32 +153,30 @@ installing and Running Job:
 	   
 	   Go to Sh file path in the given connector.
 	   
-	    "KTree-Magento2SugarCRM-Talend-Connector/Magento2SugarCRM/Magento2SugarCRMSync/Magento2SugarCRMSync_run.sh"
+	    KTree-Magento2SugarCRM-Talend-Connector/Magento2SugarCRM/Magento2SugarCRMSync/Magento2SugarCRMSync_run.sh
 	   
-		./Magento2SugarCRMSync_run.sh --context_param PropertyFilePath='/<directory of plugin file>/Plugin.properties'  --context_param MagentoConnectionTimeOut= 240 --context_param MagentoReadTimeout=360000
+	  ./Magento2SugarCRMSync_run.sh --context_param PropertyFilePath='/<directory of plugin file>/Plugin.properties'  --context_param MagentoConnectionTimeOut= 240 --context_param MagentoReadTimeout=360000
 		  
-		  (or)
-		  
-		  sh Magento2SugarCRMSync_run.sh --context_param PropertyFilePath='/<directory of plugin file>/Plugin.properties'  --context_param MagentoConnectionTimeOut= 240 --context_param MagentoReadTimeout=360000
+	  (or)
+	  
+	  sh Magento2SugarCRMSync_run.sh --context_param PropertyFilePath='/<directory of plugin file>/Plugin.properties'  --context_param MagentoConnectionTimeOut= 240 --context_param MagentoReadTimeout=360000
 
-		 ./Magento2SugarCRMSync_run.sh --       .sh file 
-		 --context_param PropertyFilePath --    Dynamically adding properties to job using external file supplying to Talend job.
-		                                        Enter the property file path.
-												
-		 MagentoReadTimeout= <Magento time specifying to exit job when magento does not respond in given time in MilliSeconds > (360000) .
+	 ./Magento2SugarCRMSync_run.sh --       .sh file 
+	 --context_param PropertyFilePath --    Dynamically adding properties to job using external file supplying to Talend job.
+	 
+	 MagentoReadTimeout= <Magento time specifying to exit job when magento does not respond in given time in MilliSeconds > (360000) .
          MagentoConnectionTimeOut=<Magento time specifying to exit job when magento does not connect and server our requests in given time in Seconds > (240) .
 
-		Configuring Job in Windows:
-		----------------------------
-		  Magento2SugarCRMSync_run.bat --context_param PropertyFilePath='/<directory of plugin file>/Plugin.properties'  --context_param MagentoConnectionTimeOut= 240 --context_param MagentoReadTimeout=360000
-		
-		Scheduling jobs in linux Using Cron-tab: (as root user , type crontab -e and add the following line and save it)
-		------------------------------------------
-		 
-		* * * * * sh Magento2SugarCRMSync_run.sh --context_param PropertyFilePath='/<directory of plugin file>/Plugin.properties'  --context_param MagentoConnectionTimeOut= 240 --context_param MagentoReadTimeout=360000
-		
-		The above Job will run every minute to sync customers from Magento to SugarCRM.
-		
+	Configuring Job in Windows:
+	----------------------------
+	  Magento2SugarCRMSync_run.bat --context_param PropertyFilePath='/<directory of plugin file>/Plugin.properties'  --context_param MagentoConnectionTimeOut= 240 --context_param MagentoReadTimeout=360000
+	
+	Scheduling jobs in linux Using Cron-tab: (as root user , type crontab -e and add the following line and save it)
+	------------------------------------------
+	 
+	* * * * * sh Magento2SugarCRMSync_run.sh --context_param PropertyFilePath='/<directory of plugin file>/Plugin.properties'  --context_param MagentoConnectionTimeOut= 240 --context_param MagentoReadTimeout=360000
+	
+	The above Job will run every minute to sync customers from Magento to SugarCRM.
  
     5.  We can run Manually by executing .bat/.sh file based on your paltform with specified parameters.
 
