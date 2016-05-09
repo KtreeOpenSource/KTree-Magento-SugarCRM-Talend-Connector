@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ktree_Advanceapi>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Ktree_Advanceapi>
+    </modules>
+</config>

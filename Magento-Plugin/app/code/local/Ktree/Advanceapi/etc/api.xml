@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<config>
+	<api>
+		<resources>
+			<advanceapi_customer translate="title" module="advanceapi">
+				<title>Ktree advanceapi Customer API calls</title>
+				<model>advanceapi/customer_api</model>
+				<acl>ktree/advanceapi</acl>
+				<methods>
+					<itemslist translate="title" module="advanceapi">
+						<title>Returns Customers list</title>
+						<acl>ktree/advanceapi/allaccess</acl>
+					</itemslist>
+					<getAllIds translate="title" module="advanceapi">
+						<title>Returns Customers list</title>
+						<acl>ktree/advanceapi/allaccess</acl>
+					</getAllIds>
+				</methods>
+			</advanceapi_customer>
+		</resources>
+		<acl>
+			<resources>
+				<ktree translate="title" module="advanceapi">
+					<title>Ktree</title>
+					<sort_order>100</sort_order>
+					<advanceapi translate="title" module="advanceapi">
+						<title>advanceapi</title>
+						<sort_order>100</sort_order>
+						<allaccess translate="title" module="advanceapi">
+							<title>Core functionality required by all users.</title>
+							<sort_order>10</sort_order>
+						</allaccess>
+						<owneraccess translate="title" module="advanceapi">
+							<title>Functions accessible only for owner.</title>
+							<sort_order>50</sort_order>
+						</owneraccess>
+					</advanceapi>
+				</ktree>
+			</resources>
+		</acl>
+	</api>
+</config>

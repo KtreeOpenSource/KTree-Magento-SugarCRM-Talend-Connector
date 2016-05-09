@@ -1,0 +1,3 @@
+%~d0
+cd %~dp0
+java -Xms256M -Xmx1024M -cp .;../lib/routines.jar;../lib/log4j-1.2.16.jar;../lib/mail-1.4.jar;../lib/activation.jar;../lib/wsdl4j-1.6.3.jar;../lib/saaj.jar;../lib/commons-logging-1.1.jar;../lib/jaxrpc.jar;../lib/commons-discovery-0.2.jar;../lib/axis.jar;../lib/commons-httpclient-3.1.jar;../lib/WebServiceInput.jar;../lib/mail.jar;../lib/dom4j-1.6.1.jar;../lib/sugarCRMManagement.jar;../lib/ini4j-0.5.1.jar;../lib/talend_file_enhanced_20070724.jar;../lib/commons-codec-1.6.jar;magento2sugarcrmsync_0_1.jar; magentosugarcrm.magento2sugarcrmsync_0_1.Magento2SugarCRMSync --context=Default %* 

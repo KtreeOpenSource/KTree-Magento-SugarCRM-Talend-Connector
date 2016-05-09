@@ -1,0 +1,4 @@
+#!/bin/sh
+cd `dirname $0`
+ROOT_PATH=`pwd`
+java -Xms256M -Xmx1024M -cp .:$ROOT_PATH:$ROOT_PATH/../lib/routines.jar:$ROOT_PATH/../lib/log4j-1.2.16.jar:$ROOT_PATH/../lib/mail-1.4.jar:$ROOT_PATH/../lib/activation.jar:$ROOT_PATH/../lib/wsdl4j-1.6.3.jar:$ROOT_PATH/../lib/saaj.jar:$ROOT_PATH/../lib/commons-logging-1.1.jar:$ROOT_PATH/../lib/jaxrpc.jar:$ROOT_PATH/../lib/commons-discovery-0.2.jar:$ROOT_PATH/../lib/axis.jar:$ROOT_PATH/../lib/commons-httpclient-3.1.jar:$ROOT_PATH/../lib/WebServiceInput.jar:$ROOT_PATH/../lib/mail.jar:$ROOT_PATH/../lib/dom4j-1.6.1.jar:$ROOT_PATH/../lib/sugarCRMManagement.jar:$ROOT_PATH/../lib/ini4j-0.5.1.jar:$ROOT_PATH/../lib/talend_file_enhanced_20070724.jar:$ROOT_PATH/../lib/commons-codec-1.6.jar:$ROOT_PATH/magento2sugarcrmsync_0_1.jar: magentosugarcrm.magento2sugarcrmsync_0_1.Magento2SugarCRMSync --context=Default "$@" 

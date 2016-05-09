@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Ktree_Advanceapi</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license>commercial</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Ktree_Advanceapi</summary>
+    <description>Ktree advance api for getting customers information</description>
+    <notes>Ktree advance api for getting customers information</notes>
+    <authors><author><name>KTree</name><user>KTree</user><email>magento@ktree.com</email></author></authors>
+    <date>2016-05-04</date>
+    <time>17:08:06</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="Ktree_Advanceapi.xml" hash="7b0fdfe4bdf824a53c11dbff48df9067"/></dir></target><target name="magelocal"><dir name="Ktree"><dir name="Advanceapi"><dir name="Helper"><file name="Data.php" hash="b5b53659d7815358a01f6cb241d4c06d"/></dir><dir name="Model"><dir name="Customer"><dir name="Api"><file name="V2.php" hash="9236bc3592a42c55d3cd03078505d3f9"/></dir><file name="Api.php" hash="7a1b048cfcb579cb5bb7471c058a3f70"/></dir></dir><dir name="etc"><file name="api.xml" hash="2e7d1d5d1646b2e4fcdd73bf90d78f90"/><file name="config.xml" hash="821826861252022680c1399d0f13ef26"/></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

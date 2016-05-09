@@ -1,0 +1,1153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="Magento ids collecting" name="MagentoIDList" prompt="MagentoIDList?" promptNeeded="false" type="id_Object" value=""/>
+    <contextParameter name="magento_sessionId" prompt="magento_sessionId?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CustomerLength" prompt="CustomerLength?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="indexval" prompt="indexval?" promptNeeded="false" type="id_Object" value=""/>
+    <contextParameter comment="" name="cus_id" prompt="cus_id?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="create_at" prompt="create_at?" promptNeeded="false" type="id_Date" value=""/>
+    <contextParameter name="update_at" prompt="update_at?" promptNeeded="false" type="id_Date" value=""/>
+    <contextParameter name="email" prompt="email?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="firstname" prompt="firstname?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="lname" prompt="lname?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter name="city" prompt="city?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="telephone" prompt="telephone?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="street" prompt="street?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="postcode" prompt="postcode?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="salutation" prompt="salutation?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="MagentoURL" prompt="MagentoURL?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="MagentoAPIUser" prompt="MagentoAPIUser?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter name="MagentoAPIPassword" prompt="MagentoAPIPassword?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="SugarCRMURL" prompt="SugarCRMURL?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="MagentoConnectionTimeOut" prompt="MagentoConnectionTimeOut?" promptNeeded="false" type="id_Integer" value="240"/>
+    <contextParameter comment="" name="SugarCRMUser" prompt="SugarCRMUser?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="SugarCRMPassword" prompt="SugarCRMPassword?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter name="PropertyFilePath" prompt="PropertyFilePath?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="ValidateVariables" prompt="ValidateVariables?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="MagentoReadTimeout" prompt="MagentoReadTimeout?" promptNeeded="false" type="id_Integer" value="360000"/>
+    <contextParameter comment="" name="MagentoConnectionCode" prompt="MagentoConnectionCode?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter name="CRMRecordsCount" prompt="CRMRecordsCount?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="SugarCRMID" prompt="SugarCRMID?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CustomerAddressHashMap" prompt="CustomerAddressHashMap?" promptNeeded="false" type="id_Object" value=""/>
+    <contextParameter comment="" name="SugarCRMCustomerID" prompt="SugarCRMCustomerID?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="CustomerCount" prompt="CustomerCount?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="MasterIDSList" prompt="MasterIDSList?" promptNeeded="false" type="id_Object" value=""/>
+    <contextParameter comment="" name="MasterListSize" prompt="MasterListSize?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="MasterSubIDList" prompt="MasterSubIDList?" promptNeeded="false" type="id_Object" value=""/>
+    <contextParameter comment="" name="MagentoCustomerCount" prompt="MagentoCustomerCount?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="EmailBody" prompt="EmailBody?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="emailSmtpPort" prompt="emailSmtpPort?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="emailSmtpHost" prompt="emailSmtpHost?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="emailSmtpUsername" prompt="emailSmtpUsername?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="emailSmtpPassword" prompt="emailSmtpPassword?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="setTo" prompt="setTo?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="setCc" prompt="setCc?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="setBcc" prompt="setBcc?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="setSubject" prompt="setSubject?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="SMTPTest" prompt="SMTPTest?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="setFrom" prompt="setFrom?" promptNeeded="false" type="id_String" value="&quot;&quot;"/>
+    <contextParameter comment="" name="ErrorCode" prompt="ErrorCode?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="SyncCustomersCount" prompt="SyncCustomersCount?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="SugarCRMIDCount" prompt="SugarCRMIDCount?" promptNeeded="false" type="id_Integer" value="0"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value=" -Xms256M -Xmx1024M " show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_c2syIAuQEeamMtjwbGoVUg" name="DataOperation"/>
+    <routinesParameter id="_c2yRsAuQEeamMtjwbGoVUg" name="Mathematical"/>
+    <routinesParameter id="_c2bsYAuQEeamMtjwbGoVUg" name="Numeric"/>
+    <routinesParameter id="_c2unUAuQEeamMtjwbGoVUg" name="Relational"/>
+    <routinesParameter id="_c2n5oAuQEeamMtjwbGoVUg" name="StringHandling"/>
+    <routinesParameter id="_c218EAuQEeamMtjwbGoVUg" name="TalendDataGenerator"/>
+    <routinesParameter id="_c28CsAuQEeamMtjwbGoVUg" name="TalendDate"/>
+    <routinesParameter id="_c0LCkAuQEeamMtjwbGoVUg" name="TalendString"/>
+    <routinesParameter id="_-sAS0HvyEeK-L6-24JVuPg" name="Mage_Api_Model_Server_HandlerBindingStub"/>
+    <routinesParameter id="__DQVMHvyEeK-L6-24JVuPg" name="Mage_Api_Model_Server_HandlerPortType"/>
+    <routinesParameter id="_-EJBkHvyEeK-L6-24JVuPg" name="MagentoService"/>
+    <routinesParameter id="_-XeNQHvyEeK-L6-24JVuPg" name="MagentoServiceLocator"/>
+    <routinesParameter id="_P9mDYGxxEeK7r5lhlFxIOw" name="Weather"/>
+    <routinesParameter id="_QE6zYGxxEeK7r5lhlFxIOw" name="WeatherLocator"/>
+    <routinesParameter id="_QPGqIGxxEeK7r5lhlFxIOw" name="WeatherSoap_BindingStub"/>
+    <routinesParameter id="_QYsrAGxxEeK7r5lhlFxIOw" name="WeatherSoap_PortType"/>
+    <routinesParameter id="_8qwkYFjNEdyj6eiqDt60Og" name="DemoRoutines"/>
+    <routinesParameter id="_Ghm2sH8gEeKFD85Pl6Yqag" name="GenericTicketConnector"/>
+    <routinesParameter id="_HE4i4H8gEeKFD85Pl6Yqag" name="GenericTicketConnectorLocator"/>
+    <routinesParameter id="_HU8_MH8gEeKFD85Pl6Yqag" name="GenericTicketConnector_Interface"/>
+    <routinesParameter id="_HggH4H8gEeKFD85Pl6Yqag" name="GenericTicketConnector_ServiceStub"/>
+    <routinesParameter id="_Hu4iIH8gEeKFD85Pl6Yqag" name="OTRS_Article"/>
+    <routinesParameter id="_H6FskH8gEeKFD85Pl6Yqag" name="OTRS_Attachment"/>
+    <routinesParameter id="_IGKZsH8gEeKFD85Pl6Yqag" name="OTRS_DynamicField"/>
+    <routinesParameter id="_ITXIMH8gEeKFD85Pl6Yqag" name="OTRS_Error"/>
+    <routinesParameter id="_IeKqAH8gEeKFD85Pl6Yqag" name="OTRS_PendingTime"/>
+    <routinesParameter id="_IrTuIH8gEeKFD85Pl6Yqag" name="OTRS_SessionCreate"/>
+    <routinesParameter id="_I4B7gH8gEeKFD85Pl6Yqag" name="OTRS_SessionCreateResponse"/>
+    <routinesParameter id="_JEgRQH8gEeKFD85Pl6Yqag" name="OTRS_TicketCreate"/>
+    <routinesParameter id="_JPwfAH8gEeKFD85Pl6Yqag" name="OTRS_TicketCreateResponse"/>
+    <routinesParameter id="_JcTGMH8gEeKFD85Pl6Yqag" name="OTRS_TicketCreate_Ticket"/>
+    <routinesParameter id="_JqbBwH8gEeKFD85Pl6Yqag" name="OTRS_TicketGet"/>
+    <routinesParameter id="_J4n10H8gEeKFD85Pl6Yqag" name="OTRS_TicketGetResponse_Article"/>
+    <routinesParameter id="_KINxAH8gEeKFD85Pl6Yqag" name="OTRS_TicketGetResponse_Ticket"/>
+    <routinesParameter id="_KY4DMH8gEeKFD85Pl6Yqag" name="OTRS_TicketGet_Attachment"/>
+    <routinesParameter id="_KnDpIH8gEeKFD85Pl6Yqag" name="OTRS_TicketSeach_DynamicField"/>
+    <routinesParameter id="_K16kgH8gEeKFD85Pl6Yqag" name="OTRS_TicketSearch"/>
+    <routinesParameter id="_LDWjkH8gEeKFD85Pl6Yqag" name="OTRS_TicketSearch_TicketFlag"/>
+    <routinesParameter id="_LOI3QH8gEeKFD85Pl6Yqag" name="OTRS_TicketUpdate"/>
+    <routinesParameter id="_LYwy4H8gEeKFD85Pl6Yqag" name="OTRS_TicketUpdateResponse"/>
+    <routinesParameter id="_Lje1IH8gEeKFD85Pl6Yqag" name="OTRS_TicketUpdate_Ticket"/>
+    <routinesParameter id="_HKXfQGIZEd26GZmhFZLTPA" name="GetRandomPhoneNum"/>
+  </parameters>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="ArrayList&lt;String> MagentoIDSList=new ArrayList&lt;String>();&#xA;context.MagentoIDList=MagentoIDSList;  &#xA;&#xA;ArrayList&lt;Object> MasterIDList=new ArrayList&lt;Object>();&#xA;context.MasterIDSList=MasterIDList;  //Main list for adding Ids sublist .&#xA;&#xA;ArrayList&lt;Object> masterSubIDList=new ArrayList&lt;Object>();&#xA;context.MasterSubIDList=masterSubIDList; //Sublist .&#xA;&#xA;HashMap&lt;Object, Object> CustomerAddress=new HashMap&lt;Object, Object>();&#xA;context.CustomerAddressHashMap=CustomerAddress;  //global hash map with current ids customer address details.&#xA;&#xA;//property file name &#xA;System.out.println(&quot;Property File Location :&quot;+context.PropertyFilePath); &#xA;&#xA;&#xA;&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import java.util.ArrayList;&#xA;import java.util.HashMap;&#xA;import java.io.File;"/>
+    <elementParameter field="TEXT" name="LABEL" value="List_Initialization"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_2"/>
+  </node>
+  <node componentName="tWebServiceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWebServiceInput_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="TEXT" name="ENDPOINT" value="context.MagentoURL+&quot;/api/?wsdl&quot;"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;username&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="PoLvNyVG2XWndNDdLn696A==" show="false"/>
+    <elementParameter field="CHECK" name="WIN_AUTH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DOMAIN" value="&quot;windows_domain&quot;" show="false"/>
+    <elementParameter field="CHECK" name="UES_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;61.163.92.4&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;8080&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="CHECK" name="NEED_SSL_TO_TRUSTSERVER" value="false"/>
+    <elementParameter field="TEXT" name="SSL_TRUSTSERVER_TRUSTSTORE" value="&quot;C:/clientTrustStore.trustStore&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" value="PoLvNyVG2XWndNDdLn696A==" show="false"/>
+    <elementParameter field="TEXT" name="SSL_TRUSTSERVER_KEYSTORE" value="&quot;C:/clientTrustStore.keyStore&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_KEYSTOREPASSWORD" value="PoLvNyVG2XWndNDdLn696A==" show="false"/>
+    <elementParameter field="TEXT" name="METHOD" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TIMEOUT" value="context.MagentoConnectionTimeOut"/>
+    <elementParameter field="TABLE" name="PARAMS"/>
+    <elementParameter field="CHECK" name="ADVANCED_USE" value="true"/>
+    <elementParameter field="WSDL2JAVA" name="WSDL2Java" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="&#x9;String url=context.MagentoURL+&quot;/api/soap/index/&quot;;&#xA;&#x9;//System.out.println(&quot;url ::&quot;+url);&#xA;&#x9;routines.Mage_Api_Model_Server_HandlerPortType porttype =new  &#xA;&#x9;routines.MagentoServiceLocator().getMage_Api_Model_Server_HandlerPort(new java.net.URL(url));&#xA;&#x9;routines.Mage_Api_Model_Server_HandlerBindingStub stub=&#x9;&#x9;(routines.Mage_Api_Model_Server_HandlerBindingStub)porttype;&#xA;&#xA;&#x9;String sessionid=porttype.login(context.MagentoAPIUser,context.MagentoAPIPassword);&#xA;&#x9;context.magento_sessionId=sessionid;&#xA;&#x9;//System.out.println(&quot;Magento_sessionId >>&quot;+context.magento_sessionId);&#xA;//Retrieving saleorderinfo of customer from magento&#xA;&#xA;&#x9;java.util.HashMap&lt;Object, Object> Customerdetailsobj=(java.util.HashMap)porttype.call(sessionid,&quot;advanceapi_customer.getAllIds&quot;,&quot;&quot;);&#xA;&#x9;//System.out.println(&quot;CustomerListObj >>&quot;+Customerdetailsobj);&#xA;&#x9;output_row.CustomerIdsResponse=Customerdetailsobj;&#xA;&#x9;&#x9;   "/>
+    <elementParameter field="CLOSED_LIST" name="MATCHBRACKETS" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="Magento CustomerIds"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWebServiceInput_1">
+      <column comment="" key="false" length="-1" name="CustomerIdsResponse" nullable="true" pattern="" precision="-1" sourceType="" type="id_Object" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String customer_count=&quot;&quot;,customerid=&quot;&quot;;&#xA;int remainderCount=0,TotalListCount=0;&#xA;&#xA;&#x9;ArrayList&lt;String> CustomerIds=(ArrayList)context.MagentoIDList;&#xA;&#x9;ArrayList&lt;Object> masterList=(ArrayList)context.MasterIDSList;&#xA;&#x9;&#xA;&#x9;java.util.HashMap&lt;Object, Object> customerdetails=(java.util.HashMap)input_row.CustomerIdsResponse;&#xA;&#x9;int CustomerCount=(Integer)customerdetails.get(&quot;customer_count&quot;);&#xA;&#x9;context.CustomerCount=CustomerCount;&#xA;&#x9;//System.out.println(&quot;CustomerIDs Count ::&quot;+CustomerCount);&#xA;    if(CustomerCount>0)&#xA;   {&#xA;   &#x9;&#x9;String[] customerIds=(String[])customerdetails.get(&quot;customer_ids&quot;);&#xA;&#x9;&#x9;//System.out.println(&quot;customerids list&quot;+customerIds);&#xA;&#x9;&#x9;for(int i=0;i&lt;customerIds.length;i++)&#xA;&#x9;&#x9; {&#xA;        &#x9;customerid=customerIds[i];&#xA;&#x9;        CustomerIds.add(customerid);     &#xA;    &#x9; } &#xA;&#x9;&#x9;//&#x9;System.out.println(&quot;CustomerIds **** >>&quot;+CustomerIds);&#xA;&#x9;&#xA;&#x9;&#x9;TotalListCount=CustomerIds.size();   //Total Customer IDs count&#xA;&#x9;&#x9;double count=Math.ceil(TotalListCount/context.MagentoCustomerCount);  &#xA;&#x9;&#x9;remainderCount=(TotalListCount%context.MagentoCustomerCount);&#xA;&#xA;&#x9;&#x9;int ListCount=(int)count;&#xA;&#x9;&#x9;//System.out.println(&quot;MagentoCustomerCount ::&quot;+context.MagentoCustomerCount);&#xA;&#x9;&#x9;&#x9;//System.out.println(&quot;ListCount ::&quot;+ListCount+&quot;TotalListCount ::&quot;+TotalListCount+&quot;remainderCount ::&quot;+remainderCount+&quot;Sublistcount ::&quot;+context.SubListCount);&#xA;&#x9;&#xA;&#x9;&#x9;if(ListCount==1){&#xA;&#x9;&#x9;&#x9;  masterList.add(CustomerIds);&#xA;&#x9;&#x9;  } else if(ListCount>0)&#xA;&#x9;&#x9;&#x9; { &#xA;&#x9;&#x9;&#x9;   int  masterListIndex=0;&#xA;&#x9;&#x9;&#x9;   for(int i=0;i&lt;ListCount;i++)&#xA;&#x9;&#x9;&#x9;   {&#xA;&#x9;&#x9;&#x9;&#x9;      ArrayList&lt;String> sublist=new ArrayList&lt;String>();&#xA;&#x9;&#x9;&#x9;&#x9;       for( int j=0; j &lt;context.MagentoCustomerCount; j++){&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;if (masterListIndex != TotalListCount){&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;sublist.add(CustomerIds.get(masterListIndex)); &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;masterListIndex +=1; &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;     }&#xA;&#x9;&#x9;    &#x9;&#x9;&#x9;  }&#xA;&#x9;      &#x9;&#x9;&#xA;&#x9;&#x9;&#x9;     &#x9;if(i==(ListCount-1)&amp;&amp; remainderCount >0){&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;    ArrayList&lt;String> sublist1=new ArrayList&lt;String>();  &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;    for( int j=0; j &lt;remainderCount; j++){  //+remaindercount&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;if (masterListIndex != TotalListCount){&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;sublist1.add(CustomerIds.get(masterListIndex)); &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;masterListIndex +=1; &#xA;&#x9;&#x9;&#x9;     &#x9;&#x9;&#x9;&#x9;&#x9;   }&#xA;&#x9;&#x9;       &#x9;&#x9;&#x9;&#x9; }&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;      // System.out.println(&quot;masterListIndex ::&quot;+masterListIndex);&#xA;&#x9;&#x9;    &#x9;&#x9;&#x9; masterList.add(sublist1);&#xA;&#x9;&#x9;&#x9;&#x9;      }&#xA;&#x9;&#x9;&#x9;&#x9;  masterList.add(sublist);&#xA;&#x9;&#x9;       }&#xA;&#x9;  &#x9;&#x9;}&#xA;&#x9;  context.MasterListSize=masterList.size();&#xA;&#x9; System.out.println(&quot;MasterCustomerIDsList ::&quot;+masterList+&quot;\tMasterListSize ::&quot;+context.MasterListSize);&#xA;   }else{&#xA;&#x9;   //System.out.println(&quot;No Customer Found for syncing and Count ::&quot;+CustomerCount);&#xA;&#x9;}"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import java.util.ArrayList;"/>
+    <elementParameter field="TEXT" name="LABEL" value="CustomerIds response"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_1"/>
+  </node>
+  <node componentName="tLoop" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="992" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLoop_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="RADIO" name="FORLOOP" value="true"/>
+    <elementParameter field="RADIO" name="WHILELOOP" value="false"/>
+    <elementParameter field="TEXT" name="FROM" value="0"/>
+    <elementParameter field="TEXT" name="TO" value="context.CustomerLength-1"/>
+    <elementParameter field="TEXT" name="STEP" value="1"/>
+    <elementParameter field="CHECK" name="INCREASE" value="true"/>
+    <elementParameter field="TEXT" name="DECLARATION" value="int i=1" show="false"/>
+    <elementParameter field="TEXT" name="CONDITION" value="i=context.CustomerLength" show="false"/>
+    <elementParameter field="TEXT" name="ITERATION" value="i++" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Extracting the Customer ids from list and iterating over it .&#xA;HashMap&lt;Object, Object> CustomerAddressHashMap1=(HashMap&lt;Object, Object>)context.CustomerAddressHashMap;&#xA;&#xA;ArrayList&lt;Object> CustomerList=(ArrayList&lt;Object>)context.MasterSubIDList;&#xA;//System.out.println(&quot;customerID main sub list::&quot;+CustomerList);&#xA;context.indexval=CustomerList.get((Integer)globalMap.get(&quot;tLoop_1_CURRENT_ITERATION&quot;)-1);&#xA;context.cus_id=(String)context.indexval;&#xA;System.out.println(&quot;customerID ::&quot;+context.cus_id);&#xA;&#xA;//Assigning values to global variables customer details for syncing to SugarCRM&#xA;&#x9;  java.text.SimpleDateFormat sdf = new SimpleDateFormat(&quot;yyyy-MM-dd hh:mm:ss&quot;);&#xA;      java.text.DateFormat formatter = new SimpleDateFormat(&quot;yyyy-MM-dd&quot;);     &#xA;&#x9;  String datecreated=(String)CustomerAddressHashMap1.get(&quot;created_at_&quot;+context.indexval);&#xA;&#x9;  //System.out.println(&quot;created at......&quot;+datecreated);&#xA;&#x9;        &#xA;&#x9;  java.util.Date CreatedDate = formatter.parse(datecreated);&#xA;&#x9;  java.sql.Date CreatedDate1 = new java.sql.Date(CreatedDate.getTime());&#xA;&#x9;  context.create_at=CreatedDate1; &#xA;&#x9;  String updateDate=(String)CustomerAddressHashMap1.get(&quot;updated_at_&quot;+context.indexval);&#xA;&#x9;  java.util.Date UpdateDate = formatter.parse(updateDate);&#xA;&#x9;  java.sql.Date UpdateDate1 = new java.sql.Date(UpdateDate.getTime());&#xA;&#x9;  context.update_at=UpdateDate1;&#xA;                              &#xA;&#x9;  String emailId=(String)CustomerAddressHashMap1.get(&quot;email_&quot;+context.indexval);&#xA;&#x9;  context.email=(emailId.isEmpty()||null==emailId||emailId.equalsIgnoreCase(&quot;null&quot;))?&quot;&quot;:emailId;&#xA;        &#xA;&#x9;  String fName=(String)CustomerAddressHashMap1.get(&quot;firstname_&quot;+context.indexval);&#xA;&#x9;  context.firstname=(fName.isEmpty()||null==fName||fName.equalsIgnoreCase(&quot;null&quot;))?&quot;&quot;:fName;&#xA;        &#xA;&#x9;  String lastname=(String)CustomerAddressHashMap1.get(&quot;lastname_&quot;+context.indexval);&#xA;&#x9;  context.lname=(lastname.isEmpty()||null==lastname||lastname.equalsIgnoreCase(&quot;null&quot;))?&quot;&quot;:lastname;&#xA;&#x9;  &#x9;  &#xA;&#x9;  int addressCount=(Integer)CustomerAddressHashMap1.get(&quot;address_count_&quot;+context.indexval);&#xA;&#x9;   &#x9;  Object addressDetailsMap=(Object)CustomerAddressHashMap1.get(&quot;addresses_&quot;+context.indexval);&#xA;&#x9;   //System.out.println(&quot;addressList type :: &quot;+addressDetailsMap.getClass());&#xA;&#x9;   &#xA;&#x9; if(addressCount>0){&#xA;&#x9;      &#x9; HashMap&lt;Object, Object>[] AddressMapDetails=(HashMap&lt;Object, Object>[])addressDetailsMap;&#xA;&#x9;      &#x9;  //System.out.println(&quot;AddressMapDetails ::&quot;+AddressMapDetails+&quot;>>&quot;+AddressMapDetails.getClass());&#xA;&#x9;      &#x9;for(java.util.Map&lt;Object,Object> AddressMap:AddressMapDetails)&#xA;&#x9;&#x9;      {&#xA;&#x9;&#x9;          &#x9;String c_city=(String)AddressMap.get(&quot;city&quot;);&#xA;&#x9;        &#x9;    context.city=(c_city.isEmpty()||null==c_city||c_city.equalsIgnoreCase(&quot;null&quot;))?&quot;&quot;:c_city;&#xA;               &#xA;&#x9;&#x9;&#x9;     &#x9; String c_phone=(String)AddressMap.get(&quot;telephone&quot;);&#xA;&#x9;    &#x9;&#x9; &#x9; context.telephone=(c_phone.isEmpty()||null==c_phone||c_phone.equalsIgnoreCase(&quot;null&quot;))?&quot;&quot;:c_phone;&#xA;&#xA;&#x9;        &#x9;&#x9;String c_street=(String)AddressMap.get(&quot;street&quot;);&#xA;&#x9;&#x9;&#x9;   &#x9;&#x9;context.street=(c_street.isEmpty()||null==c_street||c_street.equalsIgnoreCase(&quot;null&quot;))?&quot;&quot;:c_street;&#xA;&#xA;&#x9;&#x9;&#x9;      &#x9;String c_postcode=(String)AddressMap.get(&quot;postcode&quot;);&#xA;&#x9;              &#x9;context.postcode=(c_postcode.isEmpty()||null==c_postcode||c_postcode.equalsIgnoreCase(&quot;null&quot;))?&quot;&quot;:c_postcode;&#xA;                  &#xA;&#x9;&#x9; &#x9;      &#x9;String c_prefix=(String)AddressMap.get(&quot;prefix&quot;); &#xA;&#x9;&#x9; &#x9;      &#x9;context.salutation=(null==c_prefix||c_prefix.equalsIgnoreCase(&quot;null&quot;)||c_prefix.isEmpty())?&quot;&quot;:c_prefix;&#xA;&#x9;&#x9;      }&#xA;&#x9;      &#x9;&#xA;&#x9;&#x9;//System.out.println(&quot;CreateDate ::&quot;+context.create_at+&quot;\tUpdateDate ::&quot;+context.update_at+&quot;CustomerID ::\t&quot;+context.cus_id+&quot;\tSalutation ::&quot;+context.salutation+&quot;\tFirstName ::&quot;+context.firstname+&quot;LastName ::&quot;+context.lname+&quot;\tTelephone ::&quot;+context.telephone+&quot;EmailID ::&quot;+context.email+&quot;\tStreet ::\t&quot;+context.street+&quot;City ::&quot;+context.city+&quot;\tPostcode ::&quot;+context.postcode);&#xA;&#xA;&#x9;   }else{&#xA;&#x9;    &#x9;// System.out.println(&quot;No address details exists for customer with ID ::&quot;+context.cus_id);&#xA;&#x9;     &#x9;&#x9;context.city=&quot;&quot;;&#xA;&#x9;&#x9; &#x9;&#x9;context.telephone=&quot;&quot;;&#xA;         &#x9;&#x9;context.street=&quot;&quot;;&#xA;         &#x9;&#x9;context.postcode=&quot;&quot;;&#xA;&#x9;     &#x9;&#x9;context.salutation=&quot;&quot;;&#xA;&#x9;  &#x9;&#x9;}&#xA;&#x9;   &#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Iterate over cutomer Id"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_3"/>
+  </node>
+  <node componentName="tSugarCRMInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSugarCRMInput_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="TEXT" name="ENDPOINT" value="context.SugarCRMURL"/>
+    <elementParameter field="TEXT" name="USER" value="context.SugarCRMUser"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufoXoMHfc8rZibcoHfqrFB5NFo+NS5jELQ="/>
+    <elementParameter field="CLOSED_LIST" name="MODULENAME" value="Contacts"/>
+    <elementParameter field="TEXT" name="CUSTOM_MODULE_PACKAGE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CUSTOM_MODULE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONDITION" value="&quot;contacts.assigned_user_id=&quot;+context.cus_id+&quot;&amp;&amp; contacts.deleted='0'&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSugarCRMInput_1">
+      <column key="true" length="255" name="id" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1" name="deleted" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_7" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.SugarCRMCustomerID=input_row.id;&#xA;//System.out.println(&quot;deleted :: &quot;+input_row.deleted);&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_7"/>
+  </node>
+  <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_JAVA_EXCEPTION" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TWARN" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogCatcher_1">
+      <column key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_2" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.ErrorCode=1;&#xA;//input_row.code;&#xA;System.out.println(&quot;Error Mail Triggered !!!&quot;+input_row.message);&#xA;&#xA;context.setSubject=&quot;Email from &quot;+input_row.job+&quot; Talend Crons Status : Failed &quot;+input_row.message+TalendDate.formatDate(&quot;dd/MM/yyyy hh.mm&quot;, TalendDate.getCurrentDate());&#xA;&#xA;context.EmailBody=&quot;Hi,   &quot;+&quot;&lt;br>&lt;br>&quot;+&#xA;  &quot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Following Exception Raised in the Talend Job &quot;+input_row.job&#xA;    +&quot;&lt;br>&lt;br>Exception Msg   : &quot;+input_row.message&#xA;    +&quot;&lt;br>&lt;br>Component  : &quot;+input_row.origin&#xA;    +&quot;&lt;br>&lt;br>Error type  : &quot;+input_row.type&#xA;    +&quot;&lt;br>&lt;br> Exception Time :   &quot;&#xA;    +TalendDate.formatDate(&quot;yyyy-MM-dd hh:mm:ss&quot;, TalendDate.getCurrentDate());&#xA;    &#xA;    //System.out.println(&quot;email body::&quot;+context.EmailBody+&quot;error code ::&quot;+context.ErrorCode);&#xA;    &#xA;    &#xA;    &#xA;    &#xA;    &#xA;    &#xA;    &#xA;    &#xA;    &#xA;    &#xA;    &#xA;    &#xA;    &#xA;    "/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_2"/>
+  </node>
+  <node componentName="tFileInputProperties" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputProperties_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="FILE_FORMAT" value="PROPERTIES_FORMAT"/>
+    <elementParameter field="CLOSED_LIST" name="RETRIVE_MODE" value="RETRIVE_BY_SECTION" show="false"/>
+    <elementParameter field="TEXT" name="SECTION_NAME" value="&quot;section&quot;" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.PropertyFilePath"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputProperties_1">
+      <column defaultValue="" key="false" length="255" name="key" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="value" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tContextLoad" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tContextLoad_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="true"/>
+    <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tContextLoad_1">
+      <column defaultValue="" key="false" length="255" name="key" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="value" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="FILE" name="FILE_NAME" value="context.PropertyFilePath"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Please check File doesnot exists at path ::&quot;+context.PropertyFilePath);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="File does not exist"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value=""/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="dummy"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_5"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_6" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value=""/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="dummy"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_6"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_7" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Validating Property file variables &#xA;&#xA;String MagentoURL=context.MagentoURL;&#xA;String MagentoAPIUser=context.MagentoAPIUser;&#xA;String MagentoAPIPassword=context.MagentoAPIPassword;&#xA;String SugarCRMURL=context.SugarCRMURL;&#xA;String SugarCRMPassword=context.SugarCRMPassword;&#xA;String SugarCRMUser=context.SugarCRMUser;&#xA;int magentoCustomerCount=context.MagentoCustomerCount;&#xA;&#xA;&#xA;&#xA;if( null==MagentoURL || MagentoURL.equalsIgnoreCase(&quot;&quot;)|| MagentoURL.equalsIgnoreCase(&quot;null&quot;)){&#xA; &#x9;&#x9;&#x9; System.out.println(&quot;Invalid Magento URL&quot;);&#xA;  &#x9;&#x9;&#x9; context.ValidateVariables=1;&#xA;&#x9;&#x9;}&#xA;&#xA;if( null==MagentoAPIUser || MagentoAPIUser.equalsIgnoreCase(&quot;&quot;)|| MagentoAPIUser.equalsIgnoreCase(&quot;null&quot;)){&#xA; &#x9;&#x9;&#x9; System.out.println(&quot;Invalid Magento API UserName &quot;);&#xA;  &#x9;&#x9;&#x9; context.ValidateVariables=1;&#xA;&#x9;&#x9;}&#xA;&#xA;if( null==MagentoAPIPassword || MagentoAPIPassword.equalsIgnoreCase(&quot;&quot;)|| MagentoAPIPassword.equalsIgnoreCase(&quot;null&quot;)){&#xA; &#x9;&#x9;&#x9; System.out.println(&quot;Invalid Magento API Password&quot;);&#xA;  &#x9;&#x9;&#x9; context.ValidateVariables=1;&#xA;&#x9;&#x9;}&#xA;&#xA;if( null==SugarCRMURL || SugarCRMURL.equalsIgnoreCase(&quot;&quot;)|| SugarCRMURL.equalsIgnoreCase(&quot;null&quot;)){&#xA; &#x9;&#x9;&#x9; System.out.println(&quot;Invalid SugarCRM URL&quot;);&#xA;  &#x9;&#x9;&#x9; context.ValidateVariables=1;&#xA;&#x9;&#x9;}&#xA;&#xA;if( null==SugarCRMPassword || SugarCRMPassword.equalsIgnoreCase(&quot;&quot;)|| SugarCRMPassword.equalsIgnoreCase(&quot;null&quot;)){&#xA; &#x9;&#x9;&#x9; System.out.println(&quot;Invalid SugarCRM Password&quot;);&#xA;  &#x9;&#x9;&#x9; context.ValidateVariables=1;&#xA;&#x9;&#x9;}&#xA;&#xA;if( null==SugarCRMUser || SugarCRMUser.equalsIgnoreCase(&quot;&quot;)|| SugarCRMUser.equalsIgnoreCase(&quot;null&quot;)){&#xA; &#x9;&#x9;&#x9; System.out.println(&quot;Invalid SugarCRM User&quot;);&#xA;  &#x9;&#x9;&#x9; context.ValidateVariables=1;&#xA;  &#x9;&#x9;&#x9; &#xA;  &#x9;&#x9;}&#xA;  &#x9;&#x9;&#xA; if( magentoCustomerCount==0){&#xA; &#x9;&#x9;&#x9; System.out.println(&quot;Invalid Magento magentoCustomerCount&quot;);&#xA;  &#x9;&#x9;&#x9; context.ValidateVariables=1;&#xA;&#x9; }&#xA;&#x9;&#x9;&#xA;&#x9;&#xA; String smtp_msg2 = &quot;Invalid SMTP Details &quot;;&#xA;&#x9;if(null == context.emailSmtpPort || context.emailSmtpPort.equalsIgnoreCase(&quot;&quot;))&#xA; &#x9;{&#xA;   &#x9;&#x9;context.SMTPTest = 1;&#xA; &#x9;}&#xA; &#xA; &#x9;if(null == context.emailSmtpHost || context.emailSmtpHost.equalsIgnoreCase(&quot;&quot;))&#xA;&#x9; { context.SMTPTest = 1;&#xA;&#x9; }&#xA; &#xA;&#x9; if(null == context.emailSmtpUsername || context.emailSmtpUsername.equalsIgnoreCase(&quot;&quot;))&#xA;&#x9; { context.SMTPTest = 1;&#xA;&#x9; }&#xA;&#xA;&#x9; if(null == context.emailSmtpPassword || context.emailSmtpPassword.equalsIgnoreCase(&quot;&quot;))&#xA;&#x9; {  context.SMTPTest = 1;&#xA;&#x9; }&#xA; &#xA; &#xA;&#x9; if(null == context.setTo || context.setTo.equalsIgnoreCase(&quot;&quot;))&#xA;&#x9;  {&#xA;&#x9;&#x9;context.SMTPTest = 1;&#xA;      }&#xA;&#xA;     if(null == context.setCc || context.setCc.equalsIgnoreCase(&quot;null&quot;))&#xA;     {&#xA;    &#x9;  context.setCc=&quot;&quot;;&#xA;   &#x9;}&#xA;&#x9; if(null == context.setBcc || context.setBcc.equalsIgnoreCase(&quot;null&quot;))&#xA;&#x9;   {&#xA;     &#x9; context.setBcc=&quot;&quot;;&#xA;     } &#xA;     &#xA;      if(null == context.setFrom || context.setFrom.equalsIgnoreCase(&quot;null&quot;))&#xA;&#x9;   {&#xA;     &#x9; context.setFrom=&quot;&quot;;&#xA;     } &#xA;&#xA;   if(null == context.setSubject || context.setSubject.equalsIgnoreCase(&quot;&quot;))&#xA;   {&#xA;      context.setSubject=&quot;&quot;;  //default &#xA;    //System.out.println(&quot;setSubject >>&quot;+context.setSubject);&#xA;   }&#xA; &#xA;  if(context.SMTPTest == 1)&#xA;  {&#xA;&#x9;//context.err_msg = smtp_msg2;&#xA;   System.out.println(&quot;Please check !!!! &quot;+smtp_msg2);&#xA;  }&#xA;     &#x9;&#xA;&#x9;&#x9;if(context.ValidateVariables==1){&#xA;&#x9;&#x9;     System.out.println(&quot;Please check !!!! Invalid Configurations&quot;);&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;&#xA;&#x9;//System.out.println(&quot;emailSmtpPort ::&quot;+context.emailSmtpPort+&quot;emailSmtpHost ::&quot;+context.emailSmtpHost+&quot;emailSmtpPassword ::&quot;+context.emailSmtpPassword+&quot;username ::&quot;+context.emailSmtpUsername+&quot;setto ::&quot;+context.setTo+&quot;setcc::&quot;+context.setCc+&quot;setbcc ::&quot;+context.setBcc+&quot;subject ::&quot;+context.setSubject+&quot;setfrom ::&quot;+context.setFrom);&#xA; &#xA;//System.out.println(&quot;MagentoURL ::&quot;+context.MagentoURL+&quot;\tMagentoAPIUser ::&quot;+context.MagentoAPIUser+&quot;MagentoAPIPassword ::&quot;+context.MagentoAPIPassword+&quot;\tSugarCRMURL ::&quot;+context.SugarCRMURL+&quot;SugarCRMPassword ::&quot;+context.SugarCRMPassword+&quot;\tSugarCRMUser ::&quot;+context.SugarCRMUser+&quot;\tMagentoCustomerCount ::&quot;+context.MagentoCustomerCount);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="property variables validation"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_7"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_9" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="int Httpcode=0;&#xA;java.net.URL url;&#xA;&#x9; String urlString=context.MagentoURL+&quot;/api/?wsdl&quot;;&#xA;     url = new URL(urlString);&#xA;&#x9; HttpURLConnection huc =  (HttpURLConnection)url.openConnection(); &#xA;     huc.setRequestMethod(&quot;GET&quot;);&#xA;&#x9; huc.setReadTimeout(context.MagentoReadTimeout); //milli seconds&#xA;&#x9; huc.connect(); &#xA;&#x9; Httpcode=huc.getResponseCode();&#xA;&#x9; context.MagentoConnectionCode=Httpcode;&#xA;&#x9; System.out.println(&quot;MagentoReadTimeout ::&quot;+context.MagentoReadTimeout+&quot; \tMagentoConnectionTimeout ::&quot;+context.MagentoConnectionTimeOut+&quot;\tMagento Connected !!! &quot;);&#xA;&#x9; &#xA;&#x9; if(context.MagentoConnectionCode!=200){&#xA;&#x9;&#x9; throw new Exception(&quot;Magento not connecting &quot;+urlString);&#xA;&#x9; }&#xA;&#x9;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import java.net.HttpURLConnection;&#xA;import java.net.URL;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Magento connection checking"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_9"/>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_3" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="date_entered"/>
+      <elementValue elementRef="VALUE" value="context.create_at"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date_modified"/>
+      <elementValue elementRef="VALUE" value="context.update_at"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="assigned_user_id"/>
+      <elementValue elementRef="VALUE" value="context.cus_id"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="salutation"/>
+      <elementValue elementRef="VALUE" value="context.salutation"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="first_name"/>
+      <elementValue elementRef="VALUE" value="context.firstname"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="last_name"/>
+      <elementValue elementRef="VALUE" value="context.lname"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="phone_mobile"/>
+      <elementValue elementRef="VALUE" value="context.telephone"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="phone_work"/>
+      <elementValue elementRef="VALUE" value="context.telephone"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="email1"/>
+      <elementValue elementRef="VALUE" value="context.email"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="primary_address_street"/>
+      <elementValue elementRef="VALUE" value="context.street"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="primary_address_city"/>
+      <elementValue elementRef="VALUE" value="context.city"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="primary_address_postalcode"/>
+      <elementValue elementRef="VALUE" value="context.postcode"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_3">
+      <column comment="" key="false" length="20" name="date_entered" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="date_modified" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="assigned_user_id" nullable="true" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="salutation" nullable="true" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="first_name" nullable="true" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="last_name" nullable="false" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="phone_mobile" nullable="true" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="phone_work" nullable="true" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="email1" nullable="true" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="primary_address_street" nullable="true" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="primary_address_city" nullable="true" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="primary_address_postalcode" nullable="true" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="864" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_8Uwk0BJ9EeaTcOcr_1npaA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="SugarCRM_Contacts">
+      <column comment="" key="false" length="20" name="date_entered" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="date_modified" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="assigned_user_id" nullable="true" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="salutation" nullable="true" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="first_name" nullable="true" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="last_name" nullable="false" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="phone_mobile" nullable="true" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="phone_work" nullable="true" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="email1" nullable="true" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="primary_address_street" nullable="true" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="primary_address_city" nullable="true" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="primary_address_postalcode" nullable="true" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="SugarCRM_Contacts">
+        <mapperTableEntries name="date_entered" expression="row4.date_entered " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="date_modified" expression="row4.date_modified  " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="assigned_user_id" expression=" row4.assigned_user_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="salutation" expression="row4.salutation " type="id_String" nullable="true"/>
+        <mapperTableEntries name="first_name" expression="row4.first_name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="last_name" expression="row4.last_name " type="id_String"/>
+        <mapperTableEntries name="phone_mobile" expression="row4.phone_mobile " type="id_String" nullable="true"/>
+        <mapperTableEntries name="phone_work" expression="row4.phone_work " type="id_String" nullable="true"/>
+        <mapperTableEntries name="email1" expression="row4.email1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="primary_address_street" expression="row4.primary_address_street " type="id_String" nullable="true"/>
+        <mapperTableEntries name="primary_address_city" expression="row4.primary_address_city " type="id_String" nullable="true"/>
+        <mapperTableEntries name="primary_address_postalcode" expression="row4.primary_address_postalcode " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row4" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="date_entered" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="date_modified" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="assigned_user_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="salutation" type="id_String" nullable="true"/>
+        <mapperTableEntries name="first_name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="last_name" type="id_String"/>
+        <mapperTableEntries name="phone_mobile" type="id_String" nullable="true"/>
+        <mapperTableEntries name="phone_work" type="id_String" nullable="true"/>
+        <mapperTableEntries name="email1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="primary_address_street" type="id_String" nullable="true"/>
+        <mapperTableEntries name="primary_address_city" type="id_String" nullable="true"/>
+        <mapperTableEntries name="primary_address_postalcode" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tSugarCRMOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSugarCRMOutput_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="TEXT" name="ENDPOINT" value="context.SugarCRMURL"/>
+    <elementParameter field="TEXT" name="USER" value="context.SugarCRMUser"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufoXoMHfc8rZibcoHfqrFB5NFo+NS5jELQ="/>
+    <elementParameter field="CLOSED_LIST" name="ACTION" value="insert"/>
+    <elementParameter field="CLOSED_LIST" name="MODULENAME" value="Contacts"/>
+    <elementParameter field="TEXT" name="CUSTOM_MODULE_PACKAGE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CUSTOM_MODULE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSugarCRMOutput_1">
+      <column comment="" key="false" length="20" name="date_entered" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="date_modified" nullable="true" pattern="&quot;yyyy-MM-dd hh:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="assigned_user_id" nullable="true" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="salutation" nullable="true" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="first_name" nullable="true" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="last_name" nullable="false" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="phone_mobile" nullable="true" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="phone_work" nullable="true" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="email1" nullable="true" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="primary_address_street" nullable="true" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="primary_address_city" nullable="true" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="primary_address_postalcode" nullable="true" pattern="null" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_10" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="HashMap&lt;Object, Object> CustomerAddressHashMap2=(HashMap&lt;Object, Object>)context.CustomerAddressHashMap;&#xA;//System.out.println(&quot;loop iteration ::&quot;+((Integer)globalMap.get(&quot;tLoop_1_CURRENT_ITERATION&quot;)-1));&#xA;&#xA;if((context.CustomerLength-1)==((Integer)globalMap.get(&quot;tLoop_1_CURRENT_ITERATION&quot;)-1))&#xA;{&#xA;  &#xA;  CustomerAddressHashMap2.clear();&#xA; // System.out.println(&quot;CustomerAddressHashMap cleared !!!&quot;);&#xA;&#xA;}"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="HashMap clearing"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_10"/>
+  </node>
+  <node componentName="tLoop" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLoop_2" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="RADIO" name="FORLOOP" value="true"/>
+    <elementParameter field="RADIO" name="WHILELOOP" value="false"/>
+    <elementParameter field="TEXT" name="FROM" value="0"/>
+    <elementParameter field="TEXT" name="TO" value="context.MasterListSize-1"/>
+    <elementParameter field="TEXT" name="STEP" value="1"/>
+    <elementParameter field="CHECK" name="INCREASE" value="true"/>
+    <elementParameter field="TEXT" name="DECLARATION" value="int i=0" show="false"/>
+    <elementParameter field="TEXT" name="CONDITION" value="i&lt;10" show="false"/>
+    <elementParameter field="TEXT" name="ITERATION" value="i++" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tWebServiceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWebServiceInput_5" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="TEXT" name="ENDPOINT" value="context.MagentoURL+&quot;/api/?wsdl&quot;"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;username&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="PoLvNyVG2XWndNDdLn696A==" show="false"/>
+    <elementParameter field="CHECK" name="WIN_AUTH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DOMAIN" value="&quot;windows_domain&quot;" show="false"/>
+    <elementParameter field="CHECK" name="UES_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;61.163.92.4&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;8080&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="CHECK" name="NEED_SSL_TO_TRUSTSERVER" value="false"/>
+    <elementParameter field="TEXT" name="SSL_TRUSTSERVER_TRUSTSTORE" value="&quot;C:/clientTrustStore.trustStore&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" value="PoLvNyVG2XWndNDdLn696A==" show="false"/>
+    <elementParameter field="TEXT" name="SSL_TRUSTSERVER_KEYSTORE" value="&quot;C:/clientTrustStore.keyStore&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_KEYSTOREPASSWORD" value="PoLvNyVG2XWndNDdLn696A==" show="false"/>
+    <elementParameter field="TEXT" name="METHOD" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TIMEOUT" value="context.MagentoConnectionTimeOut"/>
+    <elementParameter field="TABLE" name="PARAMS"/>
+    <elementParameter field="CHECK" name="ADVANCED_USE" value="true"/>
+    <elementParameter field="WSDL2JAVA" name="WSDL2Java" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String customerId=&quot;&quot;;&#xA;HashMap&lt;Object, Object> CustomerAddressHashMap=(HashMap&lt;Object, Object>)context.CustomerAddressHashMap;&#xA;//New arraylist for adding current ids list to magentoapi for getting address list&#xA;ArrayList&lt;Object> CustomerIdsList=new ArrayList&lt;Object>(); &#xA;&#xA;//Master Ids list contains all customers ids sublist &#xA;ArrayList&lt;Object> masterList1=(ArrayList)context.MasterIDSList; &#xA;ArrayList&lt;String> customerSubList=(ArrayList&lt;String>)masterList1.get((Integer)globalMap.get(&quot;tLoop_2_CURRENT_ITERATION&quot;)-1);&#xA;context.MasterSubIDList=customerSubList;&#xA;CustomerIdsList.add(customerSubList);&#xA;context.CustomerLength=customerSubList.size();&#xA;//System.out.println(&quot;CustomerIds1 >> &quot;+CustomerIdsList+&quot;Size ::&quot;+context.CustomerLength);&#xA;&#xA;String url2=context.MagentoURL+&quot;/api/soap/index/&quot;;&#xA;&#xA;&#x9;routines.Mage_Api_Model_Server_HandlerPortType porttype2 =new  &#xA;routines.MagentoServiceLocator().getMage_Api_Model_Server_HandlerPort(new java.net.URL(url2));&#xA;&#x9;routines.Mage_Api_Model_Server_HandlerBindingStub stub2 =(routines.Mage_Api_Model_Server_HandlerBindingStub)porttype2;&#xA;&#xA;&#xA;&#x9;  Object CustomerinfoObj=(Object)porttype2.call(context.magento_sessionId,&quot;advanceapi_customer.itemslist&quot;,CustomerIdsList);&#xA;&#x9;  java.util.HashMap&lt;Object, Object>[] customeraddress=(java.util.HashMap[])CustomerinfoObj;&#xA;&#x9;  //System.out.println(&quot;CustomerinfoObj >>&quot;+customeraddress.getClass());&#xA;&#xA;   //Getting the customer details and adding it to global hashmap for futher processing&#xA;&#x9;   for(java.util.Map&lt;Object,Object> map1:customeraddress)&#xA;&#x9;   {   &#xA;&#x9;   &#x9;     customerId=(String)map1.get(&quot;customer_id&quot;); &#xA;&#x9;   &#x9;     CustomerAddressHashMap.put(&quot;default_billing_&quot;+customerId,(String)map1.get(&quot;default_billing&quot;));&#xA;&#x9;   &#x9;&#x9; CustomerAddressHashMap.put(&quot;created_at_&quot;+customerId,(String)map1.get(&quot;created_at&quot;));&#xA;&#x9;   &#x9;&#x9; CustomerAddressHashMap.put(&quot;email_&quot;+customerId,(String)map1.get(&quot;email&quot;));&#xA;&#x9;   &#x9;&#x9; CustomerAddressHashMap.put(&quot;updated_at_&quot;+customerId,(String)map1.get(&quot;updated_at&quot;));&#xA;&#x9;   &#x9;&#x9; CustomerAddressHashMap.put(&quot;firstname_&quot;+customerId,(String)map1.get(&quot;firstname&quot;));&#xA;&#x9;   &#x9;&#x9; CustomerAddressHashMap.put(&quot;lastname_&quot;+customerId,(String)map1.get(&quot;lastname&quot;));&#xA;&#x9;   &#x9;&#x9; CustomerAddressHashMap.put(&quot;address_count_&quot;+customerId,(Integer)map1.get(&quot;address_count&quot;));&#xA;&#x9;   &#x9;&#x9; CustomerAddressHashMap.put(&quot;addresses_&quot;+customerId,(Object)map1.get(&quot;addresses&quot;));&#x9;   &#x9;&#x9; &#x9;   &#x9;&#x9;}&#xA;       //  System.out.println(&quot;CustomerAddressHashMap ::&quot;+CustomerAddressHashMap);    &#xA;"/>
+    <elementParameter field="CLOSED_LIST" name="MATCHBRACKETS" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="Magento CustomerAddress"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWebServiceInput_5">
+      <column comment="" key="false" length="-1" name="customerInfo" nullable="true" pattern="" precision="-1" sourceType="" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="customerAddress" nullable="true" pattern="" precision="-1" sourceType="" type="id_Object" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//context.ErrorCode=input_row.code;&#xA;context.setSubject=&quot;Email from Magento2SugarCRM Talend Crons Status :OK &quot;+context.CustomerCount+&quot;/&quot;+context.SyncCustomersCount+&quot; Customers Synced &quot;+TalendDate.formatDate(&quot;dd/MM/yyyy hh.mm&quot;, TalendDate.getCurrentDate());&#xA;&#xA;context.EmailBody=&quot;Hi,   &quot;+&quot;&lt;br>&lt;br>&quot;+&#xA;  &quot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Job successfully performed.The following are the statistics&quot;&#xA;    +&quot;&lt;br>&lt;br>Total Customers at Magento : &quot;+context.CustomerCount&#xA;    +&quot;&lt;br>&lt;br>Total Customers Successfully Synced to SugarCRM : &quot;+context.SyncCustomersCount&#xA;    +&quot;&lt;br>&lt;br> Sync Performed Time :     &quot;&#xA;    +TalendDate.formatDate(&quot;yyyy-MM-dd hh:mm:ss&quot;, TalendDate.getCurrentDate());&#xA;    &#xA;    //System.out.println(&quot;Email body::&quot;+context.EmailBody);&#xA; System.out.println(&quot;Sync performed successfully !!!&quot;+&quot;SugarCRM Customer sync count ::&quot;+context.SyncCustomersCount);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_4"/>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="TEXT" name="TO" value="context.setTo"/>
+    <elementParameter field="TEXT" name="FROM" value="context.setFrom"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="false"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="&quot;sender&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CC" value="context.setCc"/>
+    <elementParameter field="TEXT" name="BCC" value="context.setBcc"/>
+    <elementParameter field="TEXT" name="SUBJECT" value="context.setSubject"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="context.EmailBody"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="false"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.emailSmtpHost"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="context.emailSmtpPort"/>
+    <elementParameter field="CHECK" name="SSL" value="true"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="High"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.emailSmtpUsername"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="8pW6Nmy2kufRKr6hj54cclzJdj2Mfv4X+17KgRYSzFY="/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="html"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
+    <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_8" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value=""/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="dummy"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_8"/>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_2" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="TEXT" name="TO" value="context.setTo"/>
+    <elementParameter field="TEXT" name="FROM" value="context.setFrom"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="false"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="&quot;sender&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CC" value="context.setCc"/>
+    <elementParameter field="TEXT" name="BCC" value="context.setBcc"/>
+    <elementParameter field="TEXT" name="SUBJECT" value="context.setSubject"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="context.EmailBody"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="false"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.emailSmtpHost"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="context.emailSmtpPort"/>
+    <elementParameter field="CHECK" name="SSL" value="true"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="High"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.emailSmtpUsername"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="8pW6Nmy2kufRKr6hj54cclzJdj2Mfv4X+17KgRYSzFY="/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="html"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
+    <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_2"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_11" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.SugarCRMIDCount=((Integer)globalMap.get(&quot;tSugarCRMInput_1_NB_LINE&quot;));&#xA;//System.out.println(&quot;SugarCRMIDCount ::&quot;+context.SugarCRMIDCount);&#xA;&#xA;if(context.SugarCRMIDCount==0){&#xA;&#x9;context.SyncCustomersCount++;&#xA;&#x9;//System.out.println(&quot;SugarCRM Customer sync count ::&quot;+context.SyncCustomersCount);&#xA;&#x9;}&#xA;&#xA;&#xA;//System.out.println(&quot;isempty&quot;+context.SugarCRMCustomerID.isEmpty()+&quot;equal ::&quot;+context.SugarCRMCustomerID.equalsIgnoreCase(&quot;&quot;));"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_11"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_13" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/home/sameta.jyothi/Talend6.1.0/TOS_ESB-20151029_1337-V6.1.0/Studio/configuration/lib/java" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;customer with Magento ID : &quot;+context.cus_id+&quot; Existing in SugarCRMCustomer Id ::&quot;+context.SugarCRMCustomerID);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_13"/>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tJava_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tFileExist_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk5" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tWebServiceInput_1" offsetLabelX="0" offsetLabelY="0" source="tWebServiceInput_1" target="tJavaRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="CustomerIdsResponse"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tLoop_2">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.CustomerCount>0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If8" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tLoop_1" offsetLabelX="0" offsetLabelY="0" source="tLoop_1" target="tJava_3">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate2" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tSugarCRMInput_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row9" lineStyle="0" metaname="tSugarCRMInput_1" offsetLabelX="0" offsetLabelY="0" source="tSugarCRMInput_1" target="tJavaRow_7">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="deleted"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row9" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaRow_7" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_7" target="tJava_11">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk14" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tJavaRow_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="moment"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="pid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="root_pid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="father_pid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="project"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="job"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="context"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="priority"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="origin"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="message"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="code"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaRow_2" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_2" target="tSendMail_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk10" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tFileInputProperties_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputProperties_1" target="tContextLoad_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="key"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="value"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tContextLoad_1" offsetLabelX="0" offsetLabelY="0" source="tContextLoad_1" target="tJava_6">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk6" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFileExist_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFileExist_1" target="tFileInputProperties_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Boolean)globalMap.get(&quot;tFileExist_1_EXISTS&quot;))==true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If2" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFileExist_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tFileExist_1" target="tJava_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Boolean)globalMap.get(&quot;tFileExist_1_EXISTS&quot;))==false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If3" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_5" offsetLabelX="0" offsetLabelY="0" source="tJava_5" target="tJava_9">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Boolean)globalMap.get(&quot;tFileExist_1_EXISTS&quot;))==true &amp;&amp; context.ValidateVariables==0 &amp;&amp; context.SMTPTest==0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If4" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_6" offsetLabelX="0" offsetLabelY="0" source="tJava_6" target="tJava_7">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_9" offsetLabelX="0" offsetLabelY="0" source="tJava_9" target="tWebServiceInput_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.MagentoConnectionCode==200"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If5" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tFixedFlowInput_3" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_3" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="date_entered"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="date_modified"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="assigned_user_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="salutation"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="first_name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="last_name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="phone_mobile"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="phone_work"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="email1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="primary_address_street"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="primary_address_city"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="primary_address_postalcode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="SugarCRM_Contacts" lineStyle="0" metaname="SugarCRM_Contacts" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tSugarCRMOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="deleted"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="date_entered"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="date_modified"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="modified_user_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="assigned_user_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="created_by"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="salutation"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="first_name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="last_name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="lead_source"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="title"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="department"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="account_name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="account_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="opportunity_role_fields"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="reports_to_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="report_to_name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="birthdate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="do_not_call"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="phone_home"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="phone_mobile"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="phone_work"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="phone_other"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="phone_fax"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="email1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="email2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="assistant"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="assistant_phone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="primary_address_street"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="primary_address_city"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="primary_address_state"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="primary_address_postalcode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="primary_address_country"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="alt_address_street"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="alt_address_city"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="alt_address_state"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="alt_address_postalcode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="alt_address_country"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="description"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="portal_name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="portal_active"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="portal_app"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="campaign_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="c_accept_status_fields"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="m_accept_status_fields"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="modified_by_name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="created_by_name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="SugarCRM_Contacts" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tSugarCRMOutput_1" offsetLabelX="0" offsetLabelY="0" source="tSugarCRMOutput_1" target="tJava_10">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk12" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tLoop_2" offsetLabelX="0" offsetLabelY="0" source="tLoop_2" target="tWebServiceInput_5">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate3" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tWebServiceInput_5" offsetLabelX="0" offsetLabelY="0" source="tWebServiceInput_5" target="tLoop_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk13" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tJava_8">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk8" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_4" offsetLabelX="0" offsetLabelY="0" source="tJava_4" target="tSendMail_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk9" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_8" offsetLabelX="0" offsetLabelY="0" source="tJava_8" target="tJava_4">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Boolean)globalMap.get(&quot;tFileExist_1_EXISTS&quot;))==true &amp;&amp; context.ValidateVariables==0 &amp;&amp; context.SMTPTest==0 &amp;&amp; context.ErrorCode!=1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If7" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_11" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJava_11" target="tFixedFlowInput_3">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.SugarCRMIDCount==0&#xA;&#xA;"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If1" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_11" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJava_11" target="tJava_13">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.SugarCRMIDCount==1&#xA;&#xA;"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If9" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWebServiceInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLoop_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputProperties_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_6" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_7" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_9" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_10" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLoop_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_8" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_11" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_13" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>
