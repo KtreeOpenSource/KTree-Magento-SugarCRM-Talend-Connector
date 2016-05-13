@@ -2,7 +2,7 @@ Talend Magento2_SugarCRM Customers Sync.
 ----------------------------------------
   A Talend Connector to Sync Data between Magento and SugarCRM.
 
-Site Link: www.ktree.com
+Complete Documentation : http://ktree.com/blog/magento2sugarcrm-connector-for-customer-sync.html
 
 Tested Environment:
 -------------------
